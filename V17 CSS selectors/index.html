@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selector</title>
+    <style>
+      /*  element selector   */
+        /* div{
+            background-color: skyblue;
+        } */
+          
+        /* class selctor */
+        .blue{
+            background-color: blue;
+        }
+
+        /* id selctor */
+        #green{
+            background-color: green;
+        }
+
+        /* child selector */
+        div > p {
+            color: rgb(19, 19, 230);
+            background-color: darkred;
+        }
+
+        /* descendend selector */
+        div p {
+            color:  rgb(19, 19, 230);
+            background-color: darkred;
+        }
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selctor */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: burlywood;
+        }
+        /* p:first-child{
+            background-color: aqua;     VVI
+        } */
+    </style>
+</head>
+<body>
+    <div class="blue">
+        I'm a div
+    </div>
+    <div id="green">
+        i'm also div
+    </div>
+ 
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident laboriosam praesentium.
+        </p>
+    </div>
+
+    <div>
+        <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident laboriosam praesentium.
+        </p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Go To Google</a>
+    <a href="https://www.facebook.com">Go To Facebook</a>
+
+    <div class="selector">
+          <p> I am best </p>
+    </div>
+
+</body>
+</html>

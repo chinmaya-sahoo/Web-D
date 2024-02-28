@@ -1,0 +1,1 @@
+alert("welcome to chinu's website")

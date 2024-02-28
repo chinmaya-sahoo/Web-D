@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-specificity & cascade</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        /* h1{
+            color: blue !important;
+        } */
+        .purple{
+            color: purple;
+        }
+        [data-x=a]{
+            color: maroon;
+        }
+        /* a.harryclass.rohan-class[href]:hover (1+10+10+10+10=41) */
+
+    </style>
+</head>
+<body>
+    <div>
+        <!-- specificity order:- !important(10k)> inline(1k) > id(100) > class(10) or attribute(10) > element selector(1) > universal selector(0) -->
+        <h1 class="yellow cred purple" data-x="a">
+             CSS-specificity & cascade
+        </h1>
+    </div>
+</body>
+</html>
