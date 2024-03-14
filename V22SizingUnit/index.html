@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sizing Units</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            html{
+                font-size: 20px;
+            }
+            .box{
+                box-sizing: border-box;
+                border: 2px solid black;
+                /* width: 323px; */
+                width: 80vw;
+                background-color: aquamarine;   /* pixel=(1/196)*inch */
+                margin: auto;   /* works for box element only not for inline element*/
+               }
+
+            .container{
+                box-sizing: border-box;
+                border: 2px solid black;
+                width: 80vw;
+                height: 90vh;
+                background-color: aquamarine; 
+                margin: 23px auto;
+                font-size: 16px;
+
+            }
+            .container p{
+                font-size: 2rem;   /* it shows 2*20px */
+                width: 90%;  /* 90 % of the parent */
+                border: 2px solid green;
+            }
+
+            .basket{
+                background-color: red;
+                color: yellow;
+                font-size: 22px;
+                width: 90vmax;    /*phn mai vh and computer mai vw */
+                /* width: 100vmin;  phn mai vw and comptr mai vh*/
+                border: 2px solid black;
+                box-sizing: border-box;
+                margin: 23px;
+                min-height: 40vh ; /* no limit for maximum height */
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            This is a box
+        </div>
+        <div class="container">
+             <p> it is a container Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae explicabo hic deleniti impedit itaque libero qui numquam maiores eaque, natus optio dolores ipsa aspernatur cum reprehenderit nulla rerum veritatis nesciunt! </p>
+        </div>
+        <div class="basket">
+            it's a basket
+        </div>
+    </body>
+</html>

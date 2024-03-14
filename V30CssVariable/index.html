@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viwport" content="width=device-width,initial-scale=1.0">
+        <title>CSS-Variables</title>
+        <style>
+            :root{
+                --color: blue;
+                --seccolor:rgb(176, 176, 255);   /* It's now color varible */
+                --defpad: 20px;
+                --defop: 0.4;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .nav{
+                background-color: var(--color);
+            }
+            .container{
+                background-color: var(--seccolor);
+            }
+            ul{
+                display: flex;
+            }
+            ul li{
+                opacity: var(--defop);
+                list-style: none;
+                padding: var(--defpad);
+            }
+            ul li:first-child{
+                --color: rgb(216, 117, 134);    /* It's now a local variable */
+                background-color: var(--color,blue);  /*blue is call back color variable , used when no color variable found */
+                border: 2px solid var(--seccolor);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Content</li>
+            </ul>
+        </div>
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minima vitae vero enim quia vel, atque accusantium iusto unde provident, similique cum voluptatem accusamus quo quidem quas officia culpa nisi, soluta animi facilis nulla natus explicabo. Velit nam quo tenetur provident porro ad illum nemo.
+        </div>
+
+    </body>
+</html>

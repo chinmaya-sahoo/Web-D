@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
+          <title>CSS-Position Property</title>
+          <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .box{
+                height: 143px;
+                width: 80vw;
+                padding: 3px;
+                margin: 3px;
+                border: 2px solid black;
+
+            }
+
+            .box1{
+                   background-color: red;
+                   /* position: absolute;
+                   top: 0px;
+                   right: 25px; */
+
+                   /* position: sticky;
+                   height: 100px;
+                   width: 100%;
+                   margin: 0;
+                   padding: 0;
+                   top: 0px;  */
+                 }
+            .box2{
+                   background-color: yellow;
+                 /* position: relative;        setting postion from static to relative in order use top bottom etc property 
+                   top: 34px;
+                  left: 65px; */
+
+
+            }
+            .box3{
+                background-color: yellowgreen;
+                /* position: fixed;
+                top: 0px;
+                height: 111px;
+                left: 25vw; */
+
+            }
+            .box4{
+                background-color: purple;    
+            }
+
+            .parent{
+                margin: 43px;
+                padding: 70px;
+                border: 3px solid black;
+                /* position: absolute; */
+                /* transform,filter or perspective properties can also make an element appear as postioned */
+                /* transform: translate(0); */
+                /* filter: invert(); */
+                
+            }
+
+          </style>
+     </head>
+     <body>
+        <div class="parent">
+               <!--property z-index value may decide which among 2 overlapping box is to be shown upward(more z-index value) and backward(less z-index value)-->
+           <div class="box box1">
+             <!-- goes relative with nearest postioned ancestor when top buttom... applied -->
+           </div>
+          <div class="box box2"></div>
+          <div class="box box3"></div>
+          <div class="box box4"></div>
+        
+        </div>
+     </body>
+</html>
