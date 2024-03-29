@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Animations</title>
+    <style>
+         .container{
+            height: 80vh;
+            width: 40vw;
+            background-color: rgb(49, 100, 100);
+         }
+         .box{
+            height: 34px;
+            width: 45px;
+            /* background-color: red; */
+            /* animation-name: ChinmayaAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;
+            animation-delay: 1s;
+            animation-direction:alternate-reverse;
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: ChinmayaAnimation 3s ease-in-out 1s 1 backwards,
+            chinmaya2 3s ease-in-out 3s 1;
+         }
+         @keyframes ChinmayaAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+         }
+         @keyframes chinmaya2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(250deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(330deg);
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+    
+</body>
+</html>

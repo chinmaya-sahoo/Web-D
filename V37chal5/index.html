@@ -2,13 +2,96 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Exercise-5 css-lay-out designing</title>
         <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .page{
+                height: 700px;
+                width: 1220px;
+            }
+            .upper{
+                padding: 15px;
+                background-color: pink;
+                text-align: center;
+                font-size: 50px;
+                position: sticky;
+                top: 0px;
+            }
+            .middle{
+                margin: 20px;
+                background-color: green;
+                height: 340px;
+                width: 1180px;
+                display: flex;
+            }
+            .mid1{
+                background-color: orange;
+                margin: 40px;
+                /* padding: 90px; */
+                width: 530px;
+                text-align:center;
+            }
+            .mid2{
+                background-color: blue;
+                margin: 40px;
+                /* padding: 90px; */
+                width: 530px;
+                text-align:center;
+            }
+            .details{
+                margin: 30px;
+                padding: 30px;
+                font-size: 25px;
+                background-color: peru;
+                color: purple;
+                border: 2px solid red;
+                border-radius: 15px;
+            }
+            .lower{
+                padding: 15px;
+                background-color: black;
+                color: silver;
+                text-align: center;
+                font-size: 50px;
+               
+            }
+            .logo{
+                height: 26px;
+                width: 26px;
+                background-color: aqua;
+                border-radius: 100px;
+                text-align: center;
+                position: fixed;
+                bottom: 100px;
+                right : 15px;
+            }
             
         </style>
     </head>
     <body>
-        
+        <div class="page">
+
+        <div class="upper">
+            i'm a box
+        </div>
+        <div class="middle">
+            <div class="mid1">content</div>
+            <div class="mid2">content</div>
+        </div>
+        <div class="details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque tempora esse, nobis consectetur adipisicing elit. Libero, fugit iste molestias praesentium possimus delectus ut dicta aut ipsum voluptatem.
+        </div>
+        <div class="lower">
+            somthing to be written...
+        </div>
+        <div class="logo">
+            L
+        </div>
+
+        </div>
     </body>
 </html>

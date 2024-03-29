@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>CSS-FlexBox</title>
+         <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                border: 2px solid red;
+                height: 80vh;
+                display: flex;
+                /* justify-content: center;  */
+                /* align-items: center; */
+                /* flex-direction: column; */
+                flex-wrap: wrap;
+                /* align-content: center; */
+                /* there is no justify-items */
+                /* flex-wrap: wrap-reverse; */
+                /* flex-flow:row-reverse; */
+                /* row-gap: 10px;
+                column-gap: 30px; */
+                gap: 10px 30px;
+            }
+            .order-1{  /* default order 0 hai */
+                order: 1;
+            }
+            .order-2{
+                order: 2;
+            }
+            .order-3{
+                order: 3;
+            }
+            .item{
+                height: 32px;
+                width: 32px;
+                background-color: blueviolet;
+                border: 2px solid black;
+                /* margin: 4px; */
+            
+            }
+         </style>
+     </head>
+     <body>
+        <main>
+            <div class="container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item order-1">4</div>
+                <div class="item">5</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+                <div class="item">8</div>
+            </div>
+        </main>
+        
+     </body>
+</html>

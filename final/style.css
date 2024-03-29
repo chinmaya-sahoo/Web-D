@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--color4);
+}
+
+h3 {
+    font-size: 2.1rem;
+    color: var(--secondary-color);
+    font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+h4 {
+    font-size: 1.9rem;
+    color: var(--color4);
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: "Imbue", serif;
+}
+
+:root {
+    --primary-color: #0174df;
+    --secondary-color: gold;
+    --color3: white;
+    --color4: #dd803d;
+    --padding-inline: 40px;
+}
+
+hr {
+    border: 3px solid white;
+}
+
+body {
+    color: var(--color3);
+}
+
+h2,h3,h4 {
+    line-height: 2.7rem;
+}
+
+ul {
+    justify-content: space-around;
+}
+
+ul > li {
+    list-style: none;
+    font-family: "Tauri", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: pink;
+}
+a:hover {
+    color: #F6F193;
+}
+
+.container{
+    padding: 20px var(--padding-inline);
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+.section1 {
+    width: 100vw;
+    background-color:var(--primary-color) ;
+}
+
+.section1-container {
+    justify-content: space-around;
+}
+
+.left {
+    width: 48%;
+}
+
+.left > h3 {
+    font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.profile-photo > img {
+    width: 150px;
+    border-radius: 50% ;
+    aspect-ratio: 0.9;
+    transition: box-shadow 0.2s ease;
+}
+.profile-photo > img:hover {
+    box-shadow: 4px 4px 16px #cce3e1;
+}
+
+.right {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section2 {
+    height: auto;
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+.section2-container {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gallery-text {
+    text-align: center;
+}
+
+.photo-gallery > img {
+    width: 150px;
+    border-radius: 50% ;
+    aspect-ratio: 0.9;
+    transition: box-shadow 0.2s ease;
+}
+.photo-gallery > img:hover {
+   box-shadow: 4px 4px 16px #cce3e1;
+}
+
+.section3 {
+    height:auto;
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+.section3-container {
+    justify-content: space-around;
+}
+
+.interest {
+    width: 48%;
+}
+
+.education {
+    font-family: "Imbue", serif;
+    border-spacing: 13px;
+    font-size: 1.5rem;
+}
+
+.year {
+    font-weight: 600;
+}
+
+.interest,.qualification {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.gallery-text {
+    padding-top: 20px;
+}
+
+.footer {
+    width: 100vw;
+    height: auto;
+    background-color: var(--primary-color);
+}
+
+.footer > h3 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.footer-container {
+    margin-top: 0.8rem;
+}
+
+@media screen and (max-width: 991px){
+    hr {
+        border: 2px solid white;
+    }
+    .section1-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left {
+        width: 80%;
+    }
+    .section2-container{
+        gap: 10px;
+    }
+    .section2-container {
+        flex-direction: column;
+    }
+    .profile-photo > img {
+        width: 170px;
+    }
+    .photo-gallery > img {
+        width: 200px;
+    }
+    .section3-container{
+        flex-direction: column;
+    }
+    .interest {
+        width: 80%;
+    }
+    table {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width:478px) {
+    a {
+        font-size : 0.8rem;
+        margin: 3px;
+    }
+    .photo-gallery > img {
+        width: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    h4 {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    a {
+        font-size: 0.7rem;
+        margin:5px;
+    }
+    .photo-gallery > img {
+        width: 60px;
+    }
+}
