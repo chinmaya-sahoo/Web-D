@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-12 Solution</title>
+    <style>
+        .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+        }
+
+        .box{
+            width: 40px;
+            height: 40px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+    <script>
+        // let boxes = document.getElementsByClassName("box")
+        let boxes = document.querySelector(".container").children
+        
+        function getRandomColor(){
+            let val1 = Math.ceil( 0 + Math.random()* 255)
+            let val2 = Math.ceil( 0 + Math.random()* 255)
+            let val3 = Math.ceil( 0 + Math.random()* 255)
+
+            return `rgb(${val1},${val2},${val3})`
+        }
+
+        Array.from(boxes).forEach(e=>{
+            e.style.backgroundColor = getRandomColor()
+            e.style.color = getRandomColor()
+        })
+    </script>
+</body>
+</html>

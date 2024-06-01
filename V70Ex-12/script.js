@@ -1,0 +1,1 @@
+//Given 5 boxes , Assign a random color and a random background using DOM concept
