@@ -1,0 +1,28 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 920px;
+    gap: 15px;
+}
+
+.image img {
+    width: 200px;
+}
+
+.image {
+    position: relative;
+}
+
+.capsule {
+    position:absolute;
+    z-index: 1;
+    bottom: 1px;
+    right: 1px;
+}
+
+.text h1,
+p {
+    padding: 2px 0;
+}
