@@ -5,6 +5,7 @@
     border: 2px solid black;
     width: 920px;
     gap: 15px;
+    margin: 14px;
 }
 
 .image img {
