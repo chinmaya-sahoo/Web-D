@@ -1,18 +1,19 @@
-function creatCard(title , cName , views , monthsOld ,duration,thumbnail){
+function creatCard(title, cName, views, monthsOld, duration, thumbnail) {
     let viewStr;
-    if(views<1000000 && views>1000){
-        viewStr = views/1000 + "K" ;
+    if (views < 1000000 && views > 1000) {
+        viewStr = views / 1000 + "K";
     }
-    else if(views>1000000){
-        viewStr = views/1000000 + "M" ;
+    else if (views > 1000000) {
+        viewStr = views / 1000000 + "M";
     }
     else {
-        viewStr = views ;
+        viewStr = views;
     }
     let html = `<div class="card">
             <div class="image">
                 <img src=" ${thumbnail} "
-                    alt="">
+                alt="">
+                <div class="capsule">${duration}</div>
             </div>
             <div class="text">
                 <h1> ${title} </h1>
@@ -20,5 +21,8 @@ function creatCard(title , cName , views , monthsOld ,duration,thumbnail){
             </div>
         </div>`
 
+        document.querySelector(".container").innerHTML = document.querySelector(".container").innerHTML + html ;
 
 }
+
+
