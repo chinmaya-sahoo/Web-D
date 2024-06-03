@@ -9,3 +9,19 @@ if(isNaN(a) || isNaN(b)){
 let sum = parseInt(a) + parseInt(b) //right
 
 console.log("The sum is : ",sum)
+function main(){
+    let x =1 
+    try {
+        console.log("the sum is: " , sum*x)
+        return true
+    } catch (error) {
+        console.log("error aa gaya bhai")
+        return false
+    }
+    
+    finally {
+        console.log("Files are being closed and DB connection is being closed")
+    }
+}
+
+let c = main();
