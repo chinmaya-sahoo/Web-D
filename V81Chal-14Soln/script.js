@@ -1,3 +1,12 @@
+const randomDelay = () =>{
+    return new Promise((resolve , reject) =>{
+        timeout = 1 + 6 * Math.random()
+        setTimeout(()=>{
+           resolve() 
+        },timeout*1000)
+    })
+}
+
 let text = ["Initializing Hacking...",
     "Reading Files...",
     "Password File Detected...",
@@ -8,6 +17,6 @@ let text = ["Initializing Hacking...",
         addition(item)
     }
 
-    const addition = async()=>{
-        
+    const addition = async(item)=>{
+        await randomDelay();
     }
