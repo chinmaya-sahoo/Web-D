@@ -6,6 +6,10 @@ async function sleep() {
     })
 }
 
+function sum(a,b,c){
+    return a+b+c;
+}
+
 (async function main() {
 
     // let a = await sleep()
@@ -23,4 +27,9 @@ async function sleep() {
     }
     let {a,b} = obj
     console.log(a,b)
+    
+    let arr = [2 ,4 ,6]
+    console.log(sum(arr[0],arr[1],arr[2]))
+    console.log(sum(...arr))
+
 })()
