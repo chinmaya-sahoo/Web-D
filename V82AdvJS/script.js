@@ -6,5 +6,13 @@ async function sleep() {
     })
 }
 
-let a = await sleep()
-let b = await sleep()
+(async function main(){
+    
+    // let a = await sleep()
+    // console.log(a)
+    // let b = await sleep()
+    // console.log(b)
+
+    let [x , y, ...rest] = [1 ,5 , 7]
+    console.log(x , y, rest)
+})()
