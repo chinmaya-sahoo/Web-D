@@ -56,11 +56,19 @@ img{
    animation: orbit 50s linear infinite ;
 }
 
-.mercury{
-   top: 12.5em;
-   left: 12.5em;
-   width: 15em;
-   height: 15em;
+.earth{
+   top: 6em;
+   left: 6em;
+   width: 28em;
+   height: 28em;
+   animation: orbit 50s linear infinite ;
+}
+
+.moon{
+   top: 6em;
+   left: 6em;
+   width: 28em;
+   height: 28em;
    animation: orbit 50s linear infinite ;
 }
 
