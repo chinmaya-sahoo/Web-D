@@ -1,3 +1,48 @@
 body{
+   margin: 0;
+   padding: 0;
+   height: 100vh;
    background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.container{
+   font-size: 6px;
+   width: 40em;
+   height: 40em;
+   position: relative;
+}
+
+img{
+   height: 130%;
+   width: 130%;
+}
+
+.sun{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 15em;
+   left: 15em;
+   height: 10em;
+   width: 10em;
+   border-radius: 50%;
+   box-shadow: 0 0 3em rgb(255, 128, 0);
+   animation: orbit 50s linear infinite;
+}
+
+.mercury , .venus , .earth , .moon , .mars ,.jupiter , .saturn , .uranus , .neptune {
+   position: absolute;
+   border: radius 50%;
+}
+
+.star{
+   position: absolute;
+   background-color: white;
+   border-radius: 50%;
+   z-index: -1;
 }
