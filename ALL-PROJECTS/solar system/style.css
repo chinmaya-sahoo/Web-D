@@ -45,6 +45,23 @@ img{
    left: 12.5em;
    width: 15em;
    height: 15em;
+   animation: orbit 50s linear infinite ;
+}
+
+.venus{
+   top: 10em;
+   left: 10em;
+   width: 20em;
+   height: 20em;
+   animation: orbit 50s linear infinite ;
+}
+
+.mercury{
+   top: 12.5em;
+   left: 12.5em;
+   width: 15em;
+   height: 15em;
+   animation: orbit 50s linear infinite ;
 }
 
 .star{
