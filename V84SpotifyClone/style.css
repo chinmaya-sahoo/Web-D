@@ -1,16 +1,12 @@
-body{
+body {
     /* background-color: black;
     color: white; */
 }
 
-.border{
-    border: 2px solid red;
-}
-
-.left{
+.left {
     width: 25vw;
 }
 
-.right{
+.right {
     width: 75vw;
 }
