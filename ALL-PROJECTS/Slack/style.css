@@ -520,10 +520,11 @@ footer .button .neutral:hover {
         padding-top: 20px;
     }
 
-footer {
-    gap: 30px;
+    footer {
+        gap: 30px;
+    }
 }
-}
+
 /* footer section ends */
 /* social media section begins */
 .social_media {
