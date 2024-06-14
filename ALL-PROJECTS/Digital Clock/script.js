@@ -7,3 +7,6 @@ function updateTime(){
 
     document.getElementById("date").innerText = now.getFullYear() + " - " + zeroPadding(now.getMonth() + 1 ,2) + " - " + zeroPadding(now.getDate(),2) +  " - " + WEEK[now.getDay()] ;
 }
+
+updateTime();
+setInterval(updateTime , 1000) ;
