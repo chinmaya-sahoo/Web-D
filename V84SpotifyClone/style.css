@@ -10,3 +10,10 @@ body {
 .right {
     width: 75vw;
 }
+
+.home ul li {
+    display: flex;
+    gap: 15px;
+    width: 14px;
+    list-style: none;
+}
