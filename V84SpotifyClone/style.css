@@ -5,10 +5,15 @@ body {
 
 .left {
     width: 25vw;
+    padding: 10px;
 }
 
 .right {
     width: 75vw;
+}
+
+.home{
+    padding: 10px;
 }
 
 .home ul li {
@@ -16,4 +21,5 @@ body {
     gap: 15px;
     width: 14px;
     list-style: none;
+    padding: 14px;
 }
