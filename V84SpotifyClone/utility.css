@@ -24,6 +24,14 @@
     color: white;
 }
 
+.bg-grey{
+    background-color: #121212;
+}
+
 .invert{
     filter: invert(1);
+}
+
+.rounded{
+    border-radius: 7px;
 }
