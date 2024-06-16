@@ -47,9 +47,17 @@ body {
     font-size: 10px;
     color: gray;
     gap: 13px;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer div a {
     text-decoration: none;
     color: gray;
 }
+
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+
