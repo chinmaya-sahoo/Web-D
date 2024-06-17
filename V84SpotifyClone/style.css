@@ -14,10 +14,6 @@ body {
     width: 75vw;
 }
 
-.home {
-    /* padding: 10px; */
-}
-
 .home ul li {
     display: flex;
     gap: 15px;
