@@ -33,6 +33,10 @@
     filter: invert(1);
 }
 
+.invert1{
+    filter: invert(0.9);
+}
+
 .rounded{
     border-radius: 7px;
 }
