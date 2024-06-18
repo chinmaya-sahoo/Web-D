@@ -52,7 +52,25 @@ body {
     color: gray;
 }
 
+.right{
+    margin: 16px 0;
+}
+
 .library {
     min-height: 80vh;
     position: relative;
+}
+
+.nav img {
+    width: 25px;
+    height: 25px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header>* {
+    padding: 4px;
 }
