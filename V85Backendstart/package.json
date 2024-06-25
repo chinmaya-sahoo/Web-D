@@ -1,0 +1,16 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "This is the spotify clone for my app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "spotify",
+    "music"
+  ],
+  "author": "Chinmaya",
+  "license": "ISC"
+}
